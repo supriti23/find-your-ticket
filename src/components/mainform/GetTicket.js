@@ -21,7 +21,7 @@ const getTicket = (values) => {
       );
     }
   }
-  if (parseInt(values.age) > 60 && values.zone === "BC") {
+  if (parseInt(values.age) >= 60 && values.zone === "BC") {
     if (parseInt(values.days) <= 6) {
       tickets.push(ticketTypes.get("sixtyDayBc"));
     } else if (parseInt(values.days) >= 7 && parseInt(values.days) < 30) {
@@ -37,7 +37,7 @@ const getTicket = (values) => {
       );
     }
   }
-  if (parseInt(values.age) > 60 && values.zone === "ABC") {
+  if (parseInt(values.age) >= 60 && values.zone === "ABC") {
     if (parseInt(values.days) <= 6) {
       tickets.push(ticketTypes.get("sixtyDayAbc"));
     } else if (parseInt(values.days) >= 7 && parseInt(values.days) < 30) {
@@ -63,7 +63,7 @@ const getTicket = (values) => {
   }
 
   //get ticket day tickets for different zones
-  if (parseInt(values.days) <= 6) {
+  if (parseInt(values.days) <= 6 && parseInt(values.age) < 60) {
     if (values.zone === "ABC") {
       tickets.push(ticketTypes.get("dayAbc"));
     } else if (values.zone === "BC") {
@@ -85,7 +85,7 @@ const getTicket = (values) => {
   }
 
   //get monthly tickets for different zones
-  if (parseInt(values.days) >= 30) {
+  if (parseInt(values.days) >= 30 && parseInt(values.age) < 60) {
     if (values.zone === "ABC") {
       tickets.push(
         ticketTypes.get("monthAbc"),
@@ -108,11 +108,12 @@ const getTicket = (values) => {
   }
 
   //get children tickets for different zones (for children there is no fare difference based on zone)
+  console.log(values.children,)
   if (parseInt(values.children) >= 1) {
     if (parseInt(values.days) <= 6) {
       tickets.push(ticketTypes.get("childDay"));
     } else if (parseInt(values.days) >= 7 && parseInt(values.days) < 30) {
-      tickets.push(ticketTypes.get("childWeek"), ticketTypes.get("childMonth"));
+      tickets.push(ticketTypes.get("childWeek"), ticketTypes.get("childDay"));
     } else if (parseInt(values.days) >= 30) {
       tickets.push(
         ticketTypes.get("ChildDay"),

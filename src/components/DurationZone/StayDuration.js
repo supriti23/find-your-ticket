@@ -12,11 +12,12 @@ const StayDuration = ({
   return (
     <div className="all-elements container">
       <div className="row justify-content-center">
-        <label>What is your duration of stay in the city?</label>
+        <label htmlFor="days">What is your duration of stay in the city?</label>
       </div>
       <div className="row justify-content-center">
         <input
           className="form-control"
+          id="days"
           name="days"
           type="number"
           value={days}

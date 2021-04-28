@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage Testing Renders without crashing and displays a button with text 1`] = `
+<div
+  className="container-fluid home"
+>
+  <div
+    className="heading row justify-content-center"
+  >
+    <p>
+      Welcome to Berlin
+    </p>
+  </div>
+  <div
+    className="row justify-content-center"
+  >
+    <button
+      className="btn btn-primary btn-lg"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
+      type="button"
+    >
+      Find Tickets
+    </button>
+  </div>
+</div>
+`;

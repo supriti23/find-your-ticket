@@ -8,7 +8,7 @@ export const ticketTypes = new Map([
     ["sixtyDayBc", "Special Senior Citizen Day Ticket BC"],
     ["sixtyWeekBc", "Special Senior Citizen Weekly Ticket BC"],
     ["sixtyMonthBc", "Special Senior Citizen Monthly Ticket BC"],
-    ["ChildDay", "Reduced Fare Day Ticket(Age 6 - 14)"],
+    ["childDay", "Reduced Fare Day Ticket(Age 6 - 14)"],
     ["childWeek", "Reduced Fare Weekly Ticket(Age 6 - 14)"],
     ["childMonth", "Reduced Fare Monthly Ticket(Age 6 - 14)"],
     ["dayAbc", "Day Ticket ABC"],

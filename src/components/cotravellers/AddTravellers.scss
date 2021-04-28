@@ -1,0 +1,30 @@
+.traveller {
+  width: 100%;
+  background-color: rgb(108, 196, 255);
+  &:hover {
+    background-color: rgb(2, 102, 102);
+  }
+}
+.traveller-info {
+  padding-bottom: 5%;
+}
+/* Chrome, Safari, Edge, Opera */
+div.traveller-info input::-webkit-outer-spin-button,
+div.traveller-info input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+div.traveller-info input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  text-align: center;
+}
+.form-group,
+label {
+  color: rgb(9, 5, 71);
+}
+.buttons {
+  padding-top: 5vh;
+}
+.small{
+  font-size:small;
+}

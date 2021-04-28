@@ -1,0 +1,19 @@
+.home {
+  background-image: url("../../assets/HomeBackground.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  height: 100vh;
+  transform: scale(1);
+  background-repeat: no-repeat;
+  padding: 10%;
+}
+
+.heading {
+  font-family: "Courgette", cursive;
+  font-size: 8vh;
+}
+
+.btn-lg {
+  width: 40vh;
+  font-family: "Playfair Display", serif;;
+}

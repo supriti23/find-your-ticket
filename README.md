@@ -8,6 +8,7 @@ This is frontend application with a set of questions which helps you to find sui
 * Jest and React Testing Library for Testing
 
 ### Live Demo
+https://supriti23.github.io/find-your-ticket/
 
 ### System Requirements
 - Node.js

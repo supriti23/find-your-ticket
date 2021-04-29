@@ -2,10 +2,8 @@ import { ticketTypes } from "./TicketTypes";
 
 const getTicket = (values) => {
   let tickets = [];
-   console.log(tickets)
   //get available tickets for senior citizens(age>60) based on duration of stay and selected zone
   if (parseInt(values.age) >= 60 && values.zone === "AB") {
-    console.log(parseInt(values.age))
     if (parseInt(values.days) <= 6) {
       tickets.push(ticketTypes.get("sixtyDayAb"));
     } else if (parseInt(values.days) >= 7 && parseInt(values.days) < 30) {
@@ -108,7 +106,6 @@ const getTicket = (values) => {
   }
 
   //get children tickets for different zones (for children there is no fare difference based on zone)
-  console.log(values.children,)
   if (parseInt(values.children) >= 1) {
     if (parseInt(values.days) <= 6) {
       tickets.push(ticketTypes.get("childDay"));

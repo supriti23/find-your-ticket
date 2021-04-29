@@ -8,7 +8,7 @@ const HomePage = () => {
   function nextClick() {
     setFind(true);
   }
-  console.log(find)
+
   return (
     <>
       {find ? (

@@ -1,7 +1,6 @@
-import React from "react";
+
 import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import renderer from "react-test-renderer";
 import MainForm from './MainForm';
 
 describe("Testing the Main component that renders different other components", () => {
@@ -20,6 +19,7 @@ describe("Testing the Main component that renders different other components", (
    
    //onclick event of Continue Button is fired or not
    fireEvent.click(button);
+   
   });
 
 });

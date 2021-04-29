@@ -1,8 +1,7 @@
 import React from "react";
 import "./SuggestedTicket.scss";
 
-const SuggestedTicket = ({ prevClick, givenInfo, tickets }) => {
-  console.log(tickets);
+const SuggestedTicket = ({givenInfo, tickets }) => {
   return (
     <>
       <div className="container ticket-box">

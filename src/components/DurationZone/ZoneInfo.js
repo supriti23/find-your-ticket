@@ -7,7 +7,6 @@ const ZoneInfo = ({
   handleFocus,
   errorZone,
 }) => {
-  console.log(errorZone);
   return (
     <div className="all-elements container">
       <div className="row justify-content-center">

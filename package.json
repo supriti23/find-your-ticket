@@ -2,6 +2,7 @@
   "name": "find-your-ticket",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://supriti23.github.io/find-your-ticket",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
@@ -17,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch assets/scss -o assets/css"
+    "scss": "node-sass --watch assets/scss -o assets/css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "jest": "^26.6.0",
     "node-sass": "^5.0.0",
     "prettier": "2.2.1"

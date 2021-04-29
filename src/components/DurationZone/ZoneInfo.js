@@ -3,7 +3,6 @@ import Button from "../button/Button";
 
 const ZoneInfo = ({
   prevClick,
-  nextClick,
   handleChange,
   handleFocus,
   errorZone,
@@ -55,7 +54,7 @@ const ZoneInfo = ({
           <Button buttonName="Back" handleClick={prevClick} />
         </div>
         <div className="col-md-6 d-flex justify-content-end ">
-          <button type="submit" className="btn btn-primary btn-lg">Show ticket </button>
+          <button type="submit" className="btn btn-primary btn-lg">Show Tickets </button>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Form.scss";
 import PersonalInfo from "../personalinfo/PersonalInfo";
 import AddTraveller from "../cotravellers/AddTravellers";
@@ -17,7 +17,7 @@ let personalInfoObj = {
   zone: "",
 };
 //Main Form Component renders different components depending on the form step(initial step is 1)
-const MainForm = ({}) => {
+const MainForm = () => {
   const [personalInfo, setpersonalInfo] = useState(personalInfoObj);
   const [step, setStep] = useState(1);
   const [tickets, setTickets] = useState([]);

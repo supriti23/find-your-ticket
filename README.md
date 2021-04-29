@@ -1,3 +1,5 @@
+[![Test & Deploy](https://github.com/supriti23/find-your-ticket/actions/workflows/node.js.yml/badge.svg)](https://github.com/supriti23/find-your-ticket/actions/workflows/node.js.yml)
+
 # Find your suitable tickets in Berlin City based on a questionnaire
 This is frontend application with a set of questions which helps you to find suitable tickets in the Berlin City. This is a multi-step form that asks a number of questions and based on the given/selected answers it generates a decision tree to find one/multiple suitable tickets.
 
@@ -8,6 +10,7 @@ This is frontend application with a set of questions which helps you to find sui
 * Jest and React Testing Library for Testing
 
 ### Live Demo
+https://supriti23.github.io/find-your-ticket/
 
 ### System Requirements
 - Node.js
